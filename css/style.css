@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 65.5%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 100%;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: url(/images/pattern-background-desktop.svg), #E1E9Ff;
+    background-repeat: repeat-x;
+    padding: 2rem;
+}
+
+body::after {
+    content: url(images/pattern-background-desktop.svg);
+    width: 5rem;
+    height: 140rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(180deg) translate(0%, 12%);
+  }
+  body::before {
+    content: url(images/pattern-background-desktop.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transform: translate(0%, -12%);
+  }
+
+.container {
+    max-width: 40rem;
+    margin: 10rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 1rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.left_side img {
+    width: 100%;
+}
+
+.order_heading {
+    font-weight: bold;
+}
+
+.order_detail {
+    color: hsl(224, 23%, 55%);
+}
+
+.right_side {
+    margin: 0 auto;
+    max-width: 31rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.music {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.music_img img {
+    width: 80%;
+}
+
+.music_details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1.5rem;
+    gap: .5rem;
+}
+
+.music_heading {
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+
+.music_price {
+    color: hsl(224, 23%, 55%);
+}
+
+.music_btn {
+    margin-left: auto;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Red Hat Display', sans-serif;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 1rem;
+}
+
+.btn_primary {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    margin-top: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn_secondary {
+    color: hsl(224, 23%, 55%);
+}
+
+
+
+
+
